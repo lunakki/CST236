@@ -1,0 +1,224 @@
+
+When I ask 'What is digit n of fibonacci?' I want to receive the answer so I don't have to figure it out myself
+	add_req_and_call
+	test_fibonacci_first
+
+When I ask 'What is n raised to the n?' I want to receive the answer so I don't have to figure it out myself
+	test_exponent
+
+When I ask for a numeric conversion I want at least 10 different units I can convert from/to
+	test_convert_acres_sq_feet
+	test_convert_feet_inches
+	test_convert_liters_gallons
+	test_convert_miles_km
+	test_convert_teaspoons_cups
+
+When I ask 'What is Jenny's number?' I want to be given her number so I can call her
+	test_ask_jenny_number
+
+When I ask 'What is digit n of pi?' I want to receive the answer so I don't have to figure it out myself
+	add_req_and_call
+	test_pi_first
+
+When I ask 'Is n divisible by n?' I want to receive the answer so I don't have to figure it out myself
+	test_divisible_no
+	test_divisible_yes
+
+When I ask for a color hex code I want to have at least 15 colors I can choose
+	add_req_and_call
+
+When I ask 'How many <units> is <number> <units>?' I want to receive the converted value and units so I can know the answer
+	test_convert_acres_sq_feet
+	test_convert_feet_inches
+	test_convert_liters_gallons
+	test_convert_miles_km
+	test_convert_teaspoons_cups
+
+When I ask 'What type of rectangle is n n n n' I want to receive the answer so I can finish my homework faster
+	test_ask_rectangle
+
+When I ask 'How many days until <month> <day>?' I want to receive the answer so I don't have to figure it out myself
+	test_ask_days_until_date
+	test_ask_days_until_date_2
+
+When I ask 'What is the hex code for <color>?' I want to be given the hex code so I can use it in my graphics program
+	add_req_and_call
+
+When I ask 'How old is someone born on <month> <day> <year>?' I want to receive the answer so I don't have to figure it out myself
+	test_ask_age
+
+When I say 'Open the door hal', I want the application to say 'I'm afraid I can't do that <user name>' so I know that is not an option
+	test_open_door_hal
+
+When I ask 'Please clear memory' I was the application to clear user set questions and answers so I can reset the application
+	test_clear_memory
+
+When I ask 'What lottery numbers under <limit> should I play?' I want to receive the answer so I can win the lottery
+	add_req_and_call
+
+When I ask 'What time is it?' I want to be given the current date and time so I can stay up to date
+	add_req_and_call
+
+When I ask 'Please restore memory' I want the application to restore user set questions so I can recover questions after clearing
+	test_reset_questions
+
+#0006 The system shall accept questions in the form of strings and attempt to answer them
+	test_match
+
+#0007 The system shall answer questions that begin with one of the following valid question keywords: "How", "What", "Where", "Why", "Who" and "Is"
+	test_ask_how
+	test_ask_what
+	test_ask_where
+	test_ask_who
+	test_ask_why
+
+#0004 The system shall accept quadrilateral sides as floats or integers
+	test_disconnected_all_int
+	test_rect_all_float
+	test_rect_all_int
+	test_rhombus_all_int
+	test_square_all_float
+	test_square_all_int
+	test_square_int_and_float
+	test_unknown_all_int_0
+	test_unknown_all_int_1
+
+#0005 The system shall accept quadrilateral angles as floats or integers
+	test_disconnected_all_int
+	test_rect_all_float
+	test_rect_all_int
+	test_rhombus_all_int
+	test_square_all_float
+	test_square_all_int
+	test_square_int_and_float
+	test_unknown_all_int_0
+	test_unknown_all_int_1
+
+#0002 The system shall accept three triangle sides as length in either float or integers
+	test_equilateral_all_float
+	test_equilateral_all_int
+	test_equilateral_float_and_int
+	test_isosceles_all_int_0
+	test_isosceles_all_int_1
+	test_isosceles_all_int_2
+	test_scalene_all_int
+
+#0003 The system shall be able to determine the type of quadrilateral based on 4 sides and 4 angles
+	test_disconnected_all_int
+	test_list_too_long
+	test_list_too_short
+	test_rect_all_float
+	test_rect_all_int
+	test_rhombus_all_int
+	test_square_all_float
+	test_square_all_int
+	test_square_int_and_float
+	test_tuple_too_long
+	test_tuple_too_short
+	test_unknown_all_int_0
+	test_unknown_all_int_1
+
+#0001 The system shall be able to determine if a triangle is scalene, equilateral or isosceles
+	test_equilateral_all_float
+	test_equilateral_all_int
+	test_equilateral_float_and_int
+	test_isosceles_all_int_0
+	test_isosceles_all_int_1
+	test_isosceles_all_int_2
+	test_scalene_all_int
+
+#0020 The system shall accept and store answers to previous questions in the form of a string or a function pointer and store it as the generator function.
+	test_teach
+
+#0021 If no previous question has been asked the system shall respond with "Please ask a question first"
+	test_correct_no_question
+
+#0022 If the question asked is not a string, an exception of "Not a string!" will be raised
+	test_bad_question
+
+#0009 If the system does not detect a question mark at end of the string it shall return "Was that a question?"
+	test_no_question_mark
+
+#0008 If the system does not detect a valid question keyword it shall return "Was that a question?"
+	test_no_keyword
+
+#0054 The system shall respond with the 1000th digit of pi in under 50 ms
+	test_pi_1000
+
+#0052 The system shall output questions and answers to the log file in under 50 ms
+	test_match
+
+#0055 The system shall respond with the date is under 50 ms
+	test_fibonacci_second
+
+#0104 The system shall return the repo url when asked 'Where did <file path> come from?'
+	test_get_url
+
+#0103 The system shall return the repo branch when asked 'What branch is <file path>?'
+	test_get_branch
+
+#0102 The system shall return '<hash>, <date modified>, <author>' when asked 'What is the deal with <file path>?'
+	test_get_file_info
+
+#0101 The system shall return one of the following when asked 'What is the status of <file path>?' : <file path> has been modified locally, <file path> has not been checked in, <file path> is a dirty repo, <file path> is up to date
+	test_file_dirty
+	test_file_untracked
+	test_file_up_to_date
+	test_get_repo_root
+	test_invalid_path
+	test_modified_file
+
+#0100 The system shall return 'Yes' or 'No' when asked 'Is the <file path> in the repo?'
+	test_exception
+	test_in_repo
+	test_in_repo_doesnt_exist
+	test_not_tracked
+
+#0015 The system shall provide a means of providing an answer to the previously asked question.
+	test_teach
+
+#0014 When no valid match is determined the system shall return "I don't know, please provide the answer"
+	test_no_match
+
+#0017 If no previous question has been asked the system shall respond with "Please ask a question first"
+	test_teach_no_question
+
+#0016 The system shall accept and store answers to previous questions in the form of a string or a function pointer and store it as the generator function.
+	test_teach
+
+#0011 The system shall determine an answer to a question as a correct if the keywords provide a 90% match and return the answer
+	test_keywords_near_match
+	test_keywords_not_near_enough
+
+#0010 The system shall break a question down into words separated by space
+	test_different_spaces
+
+#0013 When a valid match is determined the system shall return the answer
+	test_match
+
+#0012 The system shall exclude any number value from match code and provide the values to generator function (if one exists)
+	test_numbers
+
+#0051 When asked a question the system shall output the answer to a log file
+	test_match
+
+#0050 When asked a question the system shall output the question to a log file
+	test_ask_why
+	test_match
+
+#0053 The system shall respond with the 25th fibonacci number in under 50 ms
+	test_fibonacci_fifth
+
+#0023 If too many numbers are given for the question asked, an exception of "Too many extra parameters" will be raised
+	test_too_many_params
+
+#0019 The system shall provide a means of updating an answer to the previously asked question.
+	test_correct
+
+#0018 If an attempt is made to provide an answer to an already answered question the system shall respond with "I don\'t know about that. I was taught differently" and not update the question
+	test_teach_ask_again
+
+#0057 The system shall respond with lottery numbers in under 50 ms	test_lotto
+
+#0056 The system shall respond with a hex code color equivalent in under 50 ms
+	test_ask_colors
