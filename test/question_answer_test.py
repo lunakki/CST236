@@ -480,7 +480,7 @@ class TestQuestionTypes(TestCase):
         process_mock.configure_mock(**attrs)
         mock_func.return_value = process_mock
         self.assertRaises(Exception, TestQuestionTypes.qa_inst.ask,
-                          "Is the <.\\source\\__init__.pyc> in the repo?")
+                          "Is the <nose2.cfg> in the repo?")
 
     @requirements(['#0100'])
     @mock.patch('subprocess.Popen')
@@ -573,11 +573,11 @@ class TestQuestionTypes(TestCase):
     def test_get_repo_root(self, mock_func):
         """Get root of a repo"""
         process_mock = mock.Mock()
-        attrs = {'communicate.return_value': (os.path.abspath('.\\source\\__init__.pyc'), 0)}
+        attrs = {'communicate.return_value': (os.path.abspath('nose2.cfg'), 0)}
         process_mock.configure_mock(**attrs)
         mock_func.return_value = process_mock
-        result = get_repo_root(".\\source\\__init__.py")
-        self.assertEquals(result, os.path.abspath('.\\source\\__init__.pyc'))
+        result = get_repo_root("nose2.cfg")
+        self.assertEquals(result, os.path.abspath('nose2.cfg'))
 
     @requirements(['#0101'])
     @mock.patch('subprocess.Popen')
@@ -602,5 +602,5 @@ class TestQuestionTypes(TestCase):
         attrs = {'communicate.return_value': ('aFile', 0)}
         process_mock.configure_mock(**attrs)
         mock_func.return_value = process_mock
-        result = has_untracked_files(".\\source\\__init__.py")
+        result = has_untracked_files("nose2.cfg")
         self.assertTrue(result)

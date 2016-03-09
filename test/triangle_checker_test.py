@@ -6,8 +6,6 @@ from source.shape_checker import get_triangle_type
 from tests.plugins.ReqTracer import requirements
 
 
-# pylint: disable=too-many-public-methods
-# I already separated them as much as I can; I'm only 1 over now
 class TestTriangleType(TestCase):
     """Triangle tests"""
 
@@ -111,11 +109,6 @@ class TestTriangleType(TestCase):
     def test_dict_too_short(self):
         """Triangle test"""
         result = get_triangle_type({'side0': 1, 'side1': 1})
-        self.assertEqual(result, 'invalid')
-
-    def test_equilateral_large_num(self):
-        """Triangle test"""
-        result = get_triangle_type(1000000000000, 1000000000000, 1000000000000)
         self.assertEqual(result, 'invalid')
 
     def test_negative_num(self):
