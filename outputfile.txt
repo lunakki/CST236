@@ -162,6 +162,7 @@ When I ask 'Please restore memory' I want the application to restore user set qu
 
 #0101 The system shall return one of the following when asked 'What is the status of <file path>?' : <file path> has been modified locally, <file path> has not been checked in, <file path> is a dirty repo, <file path> is up to date
 	test_file_dirty
+	test_file_not_checked_in
 	test_file_untracked
 	test_file_up_to_date
 	test_get_repo_root

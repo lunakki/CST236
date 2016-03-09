@@ -58,7 +58,7 @@ def get_git_file_info(path):
         return '{} has been modified locally'.format(os.path.basename(path))
     elif path in get_untracked_files(test_repo):
         GIT_LOGGER.warning('%s is not checked in', path)
-        return '{} has been not been checked in'.format(os.path.basename(path))
+        return '{} has not been checked in'.format(os.path.basename(path))
     elif is_repo_dirty(test_repo, include_untracked=True):
         GIT_LOGGER.warning('%s is contained in a dirty repo', path)
         return '{} is a dirty repo'.format(os.path.basename(path))

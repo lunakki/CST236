@@ -45,10 +45,22 @@
       <file leaf-file-name="question_answer_test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/question_answer_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.6067146">
-              <caret line="596" column="28" selection-start-line="596" selection-start-column="28" selection-end-line="596" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.44604316">
+              <caret line="584" column="45" selection-start-line="584" selection-start-column="45" selection-end-line="584" selection-end-column="45" />
               <folding>
                 <element signature="e#29#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="git_utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/git_utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+              <folding>
+                <element signature="e#55#69#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,13 +89,13 @@
         <option value="$PROJECT_DIR$/test/shape_checker_test.py" />
         <option value="$PROJECT_DIR$/test/quadrilateral_checker_test.py" />
         <option value="$PROJECT_DIR$/test/rectangle_checker_test.py" />
-        <option value="$PROJECT_DIR$/source/git_utils.py" />
         <option value="$PROJECT_DIR$/tests/plugins/req_tracer.py" />
         <option value="$PROJECT_DIR$/tests/plugins/reqTracer.py" />
         <option value="$PROJECT_DIR$/source/question_answer.py" />
         <option value="$PROJECT_DIR$/tests/plugins/ReqTracer.py" />
         <option value="$PROJECT_DIR$/tests/plugins/coverage.py" />
         <option value="$PROJECT_DIR$/test/triangle_checker_test.py" />
+        <option value="$PROJECT_DIR$/source/git_utils.py" />
         <option value="$PROJECT_DIR$/test/question_answer_test.py" />
       </list>
     </option>
@@ -211,7 +223,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../labs/lab5_" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
@@ -545,7 +557,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
           <folding>
-            <element signature="e#56#85#0" expanded="true" />
+            <element signature="e#56#85#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -585,6 +597,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="181" column="18" selection-start-line="181" selection-start-column="18" selection-end-line="181" selection-end-column="18" />
+          <folding>
+            <element signature="e#55#69#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -626,6 +641,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#55#69#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -733,13 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/git_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26378897">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/rectangle_checker_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21103117">
@@ -766,7 +777,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
           <folding>
-            <element signature="e#56#85#0" expanded="true" />
+            <element signature="e#56#85#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -799,15 +810,25 @@
         <state vertical-scroll-proportion="0.18465228">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="e#51#80#0" expanded="true" />
+            <element signature="e#51#80#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/git_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+          <folding>
+            <element signature="e#55#69#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/question_answer_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6067146">
-          <caret line="596" column="28" selection-start-line="596" selection-start-column="28" selection-end-line="596" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.44604316">
+          <caret line="584" column="45" selection-start-line="584" selection-start-column="45" selection-end-line="584" selection-end-column="45" />
           <folding>
             <element signature="e#29#40#0" expanded="true" />
           </folding>

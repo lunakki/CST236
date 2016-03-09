@@ -581,10 +581,12 @@ class TestQuestionTypes(TestCase):
 
     @requirements(['#0101'])
     @mock.patch('subprocess.Popen')
-    def broken_test_file_not_checked_in(self, mock_func):
-        """Ask about file not checked in"""
+    def test_file_not_checked_in(self, mock_func):
+        """Ask about a file not checked in"""
         process_mock = mock.Mock()
         attrs = {'communicate.side_effect': [(os.path.abspath('requirements.txt'), 0),
+                                             (os.path.abspath('requirements.txt'), 0),
+                                             (os.path.abspath('requirements.txt'), 0),
                                              (os.path.abspath('requirements.txt'), 0),
                                              (os.path.abspath('nose2.cfg'), 0),
                                              (os.path.abspath('nose2.cfg'), 0)]}
@@ -592,7 +594,7 @@ class TestQuestionTypes(TestCase):
         mock_func.return_value = process_mock
         result = get_git_file_info("nose2.cfg")
         # result = Interface.ask(TestQuestionTypes.qa_inst, "What is the status of <nose2.cfg>?")
-        self.assertEquals(result, "nose2.cfg is not checked in")
+        self.assertEquals(result, "nose2.cfg has not been checked in")
 
     @requirements(['#0101'])
     @mock.patch('subprocess.Popen')
